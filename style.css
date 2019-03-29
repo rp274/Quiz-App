@@ -1,0 +1,227 @@
+html {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  text-align: center;
+  background: url(https://images.unsplash.com/photo-1416339134316-0e91dc9ded92?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80)
+    no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* landing page */
+.start-quiz {
+  width: 66%;
+  background: #f6ecd5;
+  filter: drop-shadow(0 0 15px black);
+  margin-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  display: block;
+}
+
+.start-quiz h1 {
+  color: #769fa5;
+  font-size: 28pt;
+}
+
+.start-quiz h3 {
+  color: #de1b22;
+}
+
+.start-button {
+  background: rgba(238, 238, 238, 0.9);
+  color: #769fa5;
+  border: 2px solid #769fa5;
+  padding: 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 14pt;
+}
+
+.start-button:hover {
+  background: #769fa5;
+  border: 2px solid #769fa5;
+  color: #eee;
+}
+
+/* quiz start */
+.question-form {
+  background: #f6ecd5;
+  width: 85vw;
+  margin: 5vh auto;
+  display: none;
+  filter: drop-shadow(0 0 15px black);
+}
+
+.js-question {
+  font-size: 24pt;
+  font-weight: lighter;
+  padding: 25px 15px 0px 15px;
+  margin-bottom: 0;
+}
+
+fieldset {
+  border: 0;
+}
+
+.js-answer-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.answer-option-button {
+  width: 100%;
+}
+
+.js-answer-form input {
+  background: #f6ecd5;
+  color: slategray;
+  border: 2px solid slategray;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 14pt;
+  white-space: normal;
+}
+
+.js-answer-form input:hover {
+  background: slategray;
+  border: 2px solid slategray;
+  color: #eee;
+}
+
+/* question tracking */
+.js-question-progression-tracker {
+  display: flex;
+  justify-content: center;
+}
+
+.indicator {
+  width: 5px;
+  height: 5px;
+  background: #c5c5bf;
+  border: 2px solid #f6ecd5;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.current-question {
+  border: 2px solid #769fa5;
+  background: #eee;
+}
+
+.question-tracked {
+  background: #769fa5;
+  border: 2px solid #769fa5;
+}
+
+/* score display */
+.js-score-box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.js-score-box p {
+  margin-right: 25px;
+  color: slategray;
+}
+
+/* overlay & next question setting */
+.overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left: 0;
+  z-index: 2;
+}
+
+.question-feedback {
+  font-size: 50px;
+  font-weight: strong;
+  color: #f6ecd5;
+  padding: 50px 0px 50px 0px;
+}
+
+.display-correct-answer {
+  color: #f6ecd5;
+  font-size: 14pt;
+  line-height: 20pt;
+  padding: 15px;
+  margin: 0;
+}
+
+.next-question input {
+  border: 2px solid #f6ecd5;
+  color: #f6ecd5;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 14pt;
+  background: none;
+}
+
+.next-question input:hover {
+  border: 2px solid #f6ecd5;
+  color: darkslategray;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 14pt;
+  background: #f6ecd5;
+}
+
+/* quiz results page */
+.quiz-results {
+  background: #f6ecd5;
+  filter: drop-shadow(0 0 3px black);
+  max-width: 400px;
+  padding: 15px;
+  margin: 10vh auto;
+  display: none;
+}
+
+.quiz-results h3 {
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.retry-button {
+  background: #f6ecd5;
+  color: #769fa5;
+  font-size: 14pt;
+  border: 2px solid #769fa5;
+  padding: 15px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  white-space: normal;
+}
+
+.retry-button:hover {
+  background: #769fa5;
+  border: 2px solid #769fa5;
+  color: #f6ecd5;
+  font-size: 14pt;
+}
+
+/* media query */
+@media screen and (max-width: 320px){
+  .js-question{font-size: 18pt}
+  .start-quiz h1{font-size: 18pt}
+  .start-quiz h3{font-size: 12pt; font-weight: lighter}
+  .quiz-results{max-width: 400px}
+  .quiz-results h3{font-size: 18pt; font-weight: lighter}
+  .answer-option-button{font-size: 18pt}
+  .question-feedback{margin-left:auto; margin-right: auto; font-size: 30pt;}
+}
+
+@media screen and (min-width: 768px){
+  .start-quiz{width:700px}
+  .question-form{max-width:768px}
+  .overlay{width: 50%; height:50%; top:5%; left: 25%}
+  .question-feedback{margin-top: 30px;}
+}
