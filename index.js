@@ -18,6 +18,7 @@ function generateQuestion() {
     return `<h1 class="js-question">${STORE[questionNumber].question}</h1>
         <form class="js-answer-form">
           <fieldset>
+            <legend></legend>
             <label for="answer option" class="answer-option"></label>
               <input class="answer-option-button" type="button" value="${
                 STORE[questionNumber].answers[0]
