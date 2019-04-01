@@ -15,10 +15,9 @@ function incrementScore() {
 //generate question
 function generateQuestion() {
   if (questionNumber < STORE.length) {
-    return `<h1 class="js-question">${STORE[questionNumber].question}</h1>
-        <form class="js-answer-form">
-          <fieldset>
-            <legend></legend>
+    return `<fieldset>
+            <legend><h1 class="js-question">${STORE[questionNumber].question}</h1>
+        <form class="js-answer-form"></legend>
             <label for="answer option" class="answer-option"></label>
               <input class="answer-option-button" type="button" value="${
                 STORE[questionNumber].answers[0]
