@@ -16,10 +16,10 @@ Requirements:
 - Users should be able to start a new quiz.
 
 Technologies used:
-  -HTML
-  -CSS
-  -JavaScript
-  -JQuery
+  - HTML
+  - CSS
+  - JavaScript
+  - JQuery
 
 Challenges:
   - Throughout this project I overcame a few challenges in the design and implementation of this project. The first was picking a topic for the quiz, often times trying to come up with a free form topic for a project can be difficult as there are few restrictions. Having a design background I thought I would use this as a method to show off this knowledge through the quiz. I also had to make sure the project followed the a11y requirements which I was able to do so by using a <form> element to hold the quiz questions and answer options. Finally the biggest challenge I had was displaying dynamic progression tracker for the quiz. I started off with a quick fix for this but the result was a large section of repetitive code. I will be revisiting this project to refactor and improve the code I have written thus far.
