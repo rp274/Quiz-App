@@ -60,7 +60,11 @@ body {
 .js-question {
   font-size: 24pt;
   font-weight: lighter;
-  padding: 25px 15px 0px 15px;
+  padding: 15px 15px 0px 15px;
+  margin: 0;
+}
+
+.js-question h1{
   margin: 0;
 }
 
