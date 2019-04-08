@@ -128,82 +128,8 @@ function overlayOff() {
 
 //progression indicator
 function updateProgress() {
-  switch (questionNumber) {
-    case 0:
-      $(".q1").addClass("current-question");
-      break;
-    case 1:
-      $(".q1").addClass("question-tracked");
-      $(".q2").addClass("current-question");
-      break;
-    case 2:
-      $(".q1").addClass("question-tracked");
-      $(".q2").addClass("question-tracked");
-      $(".q3").addClass("current-question");
-      break;
-    case 3:
-      $(".q1").addClass("question-tracked");
-      $(".q2").addClass("question-tracked");
-      $(".q3").addClass("question-tracked");
-      $(".q4").addClass("current-question");
-      break;
-    case 4:
-      $(".q1").addClass("question-tracked");
-      $(".q2").addClass("question-tracked");
-      $(".q3").addClass("question-tracked");
-      $(".q4").addClass("question-tracked");
-      $(".q5").addClass("current-question");
-      break;
-    case 5:
-      $(".q1").addClass("question-tracked");
-      $(".q2").addClass("question-tracked");
-      $(".q3").addClass("question-tracked");
-      $(".q4").addClass("question-tracked");
-      $(".q5").addClass("question-tracked");
-      $(".q6").addClass("current-question");
-      break;
-    case 6:
-      $(".q1").addClass("question-tracked");
-      $(".q2").addClass("question-tracked");
-      $(".q3").addClass("question-tracked");
-      $(".q4").addClass("question-tracked");
-      $(".q5").addClass("question-tracked");
-      $(".q6").addClass("question-tracked");
-      $(".q7").addClass("current-question");
-      break;
-    case 7:
-      $(".q1").addClass("question-tracked");
-      $(".q2").addClass("question-tracked");
-      $(".q3").addClass("question-tracked");
-      $(".q4").addClass("question-tracked");
-      $(".q5").addClass("question-tracked");
-      $(".q6").addClass("question-tracked");
-      $(".q7").addClass("question-tracked");
-      $(".q8").addClass("current-question");
-      break;
-    case 8:
-      $(".q1").addClass("question-tracked");
-      $(".q2").addClass("question-tracked");
-      $(".q3").addClass("question-tracked");
-      $(".q4").addClass("question-tracked");
-      $(".q5").addClass("question-tracked");
-      $(".q6").addClass("question-tracked");
-      $(".q7").addClass("question-tracked");
-      $(".q8").addClass("question-tracked");
-      $(".q9").addClass("current-question");
-      break;
-    case 9:
-      $(".q1").addClass("question-tracked");
-      $(".q2").addClass("question-tracked");
-      $(".q3").addClass("question-tracked");
-      $(".q4").addClass("question-tracked");
-      $(".q5").addClass("question-tracked");
-      $(".q6").addClass("question-tracked");
-      $(".q7").addClass("question-tracked");
-      $(".q8").addClass("question-tracked");
-      $(".q9").addClass("question-tracked");
-      $(".q10").addClass("current-question");
-      break;
+  if(status === "unanswered"){
+    $(".q"+questionNumber).addClass("current-question");
   }
 }
 
